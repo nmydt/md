@@ -3,13 +3,14 @@ name: Compress
 on:
   push:
     branches: [main]
-    workflow_dispatch:
+
 
     paths:
       - "**.jpg"
       - "**.jpeg"
       - "**.png"
       - "**.webp"
+  workflow_dispatch:
 
 jobs:
   compress:
